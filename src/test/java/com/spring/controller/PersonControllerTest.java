@@ -58,4 +58,7 @@ public class PersonControllerTest {
 		Assert.assertEquals("\"CREATED\"", response.getContentAsString());
 		}
 }
-
+/**
+ * Another useful approach is to not start the server at all, but test only the layer below that, where Spring handles the incoming HTTP request and
+ * hands it off to your controller.
+ */
